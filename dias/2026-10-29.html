@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gran Dossier — 2026-10-29</title>
+<style>
+:root{--bg:#f8fafc;--card:#fff;--soft:#f1f5f9;--line:#e2e8f0;--text:#0f172a;--muted:#64748b;--dim:#94a3b8;
+  --accent:#2563eb;--accent-soft:#eff6ff;--gold:#b45309;--gold-soft:#fffbeb;}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d12;--card:#13161d;--soft:#1a1e28;--line:#252a36;--text:#e8eaf0;
+  --muted:#9aa0b0;--dim:#5f6678;--accent:#60a5fa;--accent-soft:#172033;--gold:#fbbf24;--gold-soft:#231d0f;}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,system-ui,'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)} .wrap{max-width:860px;margin:0 auto;padding:20px 16px 64px}
+header.top{padding:24px 16px 8px;max-width:860px;margin:0 auto}
+.back{font-size:13px;color:var(--muted);text-decoration:none} h1{font-size:26px;font-weight:800;margin-top:6px}
+.sub{color:var(--muted);font-size:14px;text-transform:capitalize}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.summary h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.summary li{margin:6px 0 6px 18px;font-size:15px}
+.gospel{background:var(--gold-soft);border:1px solid color-mix(in srgb,var(--gold) 30%,transparent);border-radius:14px;padding:16px 18px;margin-bottom:18px}
+.g-head{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)} .g-head span{text-transform:none;font-weight:500}
+blockquote{font-size:17px;font-style:italic;margin:10px 0 8px} cite{font-style:normal;font-size:13px;color:var(--muted)}
+.gospel p{font-size:14px;color:var(--muted);margin-bottom:8px}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:6px;padding:10px 0;border-bottom:1px solid var(--line)}
+nav.tabs button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;padding:10px 6px;font-size:14px;font-weight:600;cursor:pointer}
+nav.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tab{display:none;padding-top:16px} .tab.on{display:block}
+.block{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.block h3{font-size:16px;margin-bottom:10px} h5{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+.pend{background:var(--soft);border:1px dashed var(--line);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--muted)}
+.stats{display:flex;gap:8px;flex-wrap:wrap} .stats span{background:var(--soft);border-radius:99px;padding:3px 10px;font-size:12px;color:var(--muted)}
+.stats b{color:var(--accent)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.pcard{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}
+.pcard.first{border-color:var(--accent);background:var(--accent-soft)}
+.rank{position:absolute;top:12px;right:12px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.src{font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;padding-right:28px}
+.pcard h4{font-size:15px;line-height:1.35;margin-bottom:8px} .pcard p{font-size:13.5px;color:var(--muted);margin-bottom:10px}
+.pred{font-size:13px;background:var(--card);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:7px 10px;margin:6px 0 8px}
+.pred b{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.pred span{font-size:10.5px;color:var(--dim);margin-left:4px} .pcard .pred{background:var(--card)}
+.lnk{font-size:12px;font-weight:600;text-decoration:none}
+.radar{list-style:none} .ritem{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:12px 0;border-top:1px solid var(--line)}
+.rn{font-weight:700;color:var(--accent);font-size:13px} .rt{font-weight:600;font-size:14px} .rl{font-size:13.5px;color:var(--muted);margin:2px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.panel{background:var(--soft);border-radius:12px;padding:4px 14px 12px;margin-top:12px}
+.dots{list-style:none} .dots li{position:relative;padding-left:16px;margin:8px 0;font-size:13.5px}
+.dots li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.dots.q li::before{border-radius:1px;transform:rotate(45deg)}
+.ideas{list-style:none} .ideas li{display:flex;gap:10px;align-items:baseline;margin:8px 0;font-size:13.5px}
+.tag{flex-shrink:0;min-width:92px;text-align:center;font-size:10.5px;font-weight:700;text-transform:uppercase;color:var(--k);
+  background:color-mix(in srgb,var(--k) 14%,transparent);border:1px solid color-mix(in srgb,var(--k) 35%,transparent);border-radius:99px;padding:2px 8px}
+.legend{display:flex;gap:8px;margin-bottom:10px}
+.cine{font-size:12px;font-weight:800;color:#fff;background:var(--c);border-radius:6px;padding:2px 8px}
+.fine{font-size:11.5px;color:var(--dim);margin-top:14px}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:16px}
+.day{display:block;text-decoration:none;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.day:first-child{border-color:var(--accent)} .day .d{font-weight:700;text-transform:capitalize} .day .f{font-size:13px;color:var(--muted);margin-top:4px}
+.news{padding:10px 0;border-top:1px solid var(--line)} .news:first-of-type{border-top:none;padding-top:0}
+.news h4{font-size:15px;margin-bottom:4px} .news p{font-size:14px;color:var(--muted);margin-bottom:6px}
+.fuentes{display:flex;flex-wrap:wrap;gap:4px 10px} .poder{margin-bottom:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;display:block;overflow-x:auto}
+.tbl th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);padding:6px 8px;border-bottom:1px solid var(--line)}
+.tbl td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top} .horas{white-space:nowrap;color:var(--muted)}
+.impact{font-size:14px;margin:10px 0 6px} .frase{font-size:15px;margin-top:10px;color:var(--accent)}
+footer{color:var(--dim);font-size:12px;text-align:center;margin-top:32px}
+@media(max-width:640px){.cols{grid-template-columns:1fr} h1{font-size:22px}}
+</style></head><body>
+<header class="top"><a class="back" href="../index.html">← Todos los días</a>
+  <h1>📅 jueves 29 de octubre de 2026</h1><div class="sub">Gran Dossier · para Lucho</div></header>
+<main class="wrap">
+  <section class="summary"><h2>☀️ Resumen del día</h2><ul><li>Medicina: dengue y leptospirosis en alza ante El Niño; la vacuna contra el dengue se amplía a EsSalud (RM 946-2026).</li><li>País: la presidenta visita a Bukele y el CECOT mientras el SUTEP acata un paro nacional por presupuesto educativo.</li><li>Ocio: semana floja en cine y streaming — buen momento para el backlog.</li></ul></section>
+  
+    <section class="gospel">
+      <div class="g-head">✝️ Evangelio del día · <span>Miércoles 28 de octubre · Fiesta de Santos Simón y Judas</span></div>
+      <blockquote>«Jesús se retiró a una montaña para orar, y pasó toda la noche en oración con Dios.» <cite>Lc 6, 12</cite></blockquote>
+      <p>Antes de elegir a los Doce, Jesús no calcula: ora toda la noche. Y no elige a los más capaces, sino que capacita a los que llama.</p>
+      <a class="lnk" href="https://www.algodelevangelio.org/evangelio/lucas-6-12-19-fiesta-de-santos-simon-y-judas-4/" target="_blank" rel="noopener">↗ Leer Lucas 6, 12-19 completo en Algo del Evangelio</a>
+      <p class="fine">Algo del Evangelio aún no publica el del jueves 29; se muestra el más reciente.</p>
+    </section>
+  <nav class="tabs"><button data-t="medicina">🩺 Medicina</button><button data-t="actualidad">🌎 Actualidad</button><button data-t="ocio">🎬 Ocio</button></nav>
+  <section class="tab" id="medicina">
+    <div class="block"><h3>🩺 Radar Médico &amp; IA</h3><div class="news"><h4>Dengue y leptospirosis en alza ante El Niño</h4><p>Según el CDC-Minsa, hasta la semana epidemiológica 41 el Perú acumula 76 784 casos de dengue con 81 fallecidos y más de 13 000 casos de leptospirosis con 50 fallecidos. El Minsa emitió una alerta epidemiológica por El Niño 2026-2027 y prepara más de 5 000 brigadistas y 30 puestos médicos. Momento de tener frescos el dengue con signos de alarma y la sospecha de leptospirosis en el síndrome febril.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.infobae.com/peru/2026/10/28/leptospirosis-alcanza-cifras-historicas-en-peru-y-el-dengue-se-dispara-ante-el-nino-estamos-ante-las-peores-epidemias/" target="_blank" rel="noopener">↗ Infobae</a> · <a class="lnk" href="https://peru21.pe/peru/minsa-emite-alerta-epidemiologica-por-fenomeno-el-nino/" target="_blank" rel="noopener">↗ Perú21</a></div></div><div class="news"><h4>Vacunación contra el dengue se amplía a EsSalud</h4><p>La RM N.° 946-2026/MINSA, publicada el 24 de octubre, actualiza la norma técnica de vacunación contra el dengue e incorpora a los establecimientos de EsSalud como puntos de vacunación. Norma peruana aplicable en el primer nivel: vale leer la NTS completa y anotarla con procedencia [NTS MINSA].</p>
+      <div class="fuentes"><a class="lnk" href="https://consultorsalud.com/peru-vacunacion-contra-el-dengue-essalud/" target="_blank" rel="noopener">↗ ConsultorSalud</a></div></div><div class="news"><h4>Sarampión y nuevos medicamentos</h4><p>Perú registra más de 1 700 casos de sarampión en 2026 según el Minsa, y se aprobaron ocho medicamentos para VIH y hepatitis B y C. El sarampión es clásico de salud pública en el ENAM: caso sospechoso, notificación inmediata y cerco epidemiológico. Sin novedades de ENAM ni SERUMS 2026-II en esta búsqueda.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.gob.pe/institucion/minsa/noticias" target="_blank" rel="noopener">↗ Minsa</a></div></div><div class="news"><h4>IA Watch · Anthropic</h4><p>Anthropic adquirió la biotech Mithril Medicine y anunció alianzas de descubrimiento de fármacos con Claude. Su documento de salida a bolsa reconoce que menores y personas en riesgo suicida han usado Claude y que sus efectos a largo plazo en salud mental son desconocidos — razón más para no tomar sus salidas como verificadas.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.eewmagazineonline.com/health-and-wellness/2026/10/27/anthropic-children-claude-ai-mental-health" target="_blank" rel="noopener">↗ EEW Magazine</a> · <a class="lnk" href="https://thesignal.substack.com/p/anthropic-pulls-away-openai-strikes" target="_blank" rel="noopener">↗ The Signal</a></div></div><div class="news"><h4>IA Watch · Google y OpenAI</h4><p>Google presentó Gemini 4 Carbon, que según reportes encabezó el índice de Artificial Analysis (59) frente a Claude Opus 5.5 (58) y GPT-6 Astra (57), por ahora solo para defensores de ciberseguridad. OpenAI bajó el precio de GPT-6.1 Terra y enfrenta una demanda por consejos médicos de ChatGPT. Nombres de modelos provisionales: difieren entre fuentes.</p>
+      <div class="fuentes"><a class="lnk" href="https://gulfnews.com/technology/google-unveils-gemini-4-carbon-with-top-ai-benchmark-score-expands-focus-on-cybersecurity-1.500727714" target="_blank" rel="noopener">↗ Gulf News</a> · <a class="lnk" href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">↗ AI Weekly</a></div></div></div>
+    
+    <div class="block">
+      <h3>📚 Dossier · Razonamiento Clínico &amp; Educación Médica</h3>
+      <div class="stats"><span><b>225</b> encontrados</span><span><b>79</b> revisados</span>
+        <span><b>13</b> curados</span></div>
+      <h5>🏆 Top 3</h5><div class="pgrid">
+      <article class="pcard first">
+        <span class="rank">1</span>
+        <div class="src">NEJM AI · McCoy LG, Rodman A, et al. · ingresó a PubMed esta semana</div>
+        <h4>Assessment of Large Language Models in Clinical Reasoning: A Novel Benchmarking Study</h4>
+        <p>Usa el Script Concordance Test: te dan un caso, luego un dato nuevo, y respondes cuánto cambia la probabilidad de un diagnóstico (de −2 a +2). Es exactamente la habilidad de leer pistas narrativas. Los modelos de IA rindieron peor que en exámenes de opción múltiple, no alcanzaron a residentes senior y mostraron sobreconfianza: usaban mucho los extremos y casi nunca respondían 0 («este dato no cambia nada»).</p>
+        <div class="pred"><b>Predicción</b><span>opinión, sin fuente</span>Las preguntas tipo SCT van a crecer en exámenes de razonamiento porque miden lo que la opción múltiple no mide. Si entrenas «¿este dato sube, baja o no cambia?», atacas directo tu falla con pistas narrativas.</div>
+        <a class="lnk" href="https://doi.org/10.1056/AIdbp2500120" target="_blank" rel="noopener">↗ DOI</a>
+      </article>
+      <article class="pcard">
+        <span class="rank">2</span>
+        <div class="src">Lancet Digit Health · 23 oct 2026 · Gaube S, et al. · aleatorizado, 125 lectores</div>
+        <h4>Examining reliance patterns on AI advice in medical imaging: a mixed-methods, randomised, crossover experiment</h4>
+        <p>Con IA se cometen dos errores: creerle cuando se equivoca (sobre-confianza) e ignorarla cuando acierta (sub-confianza). En términos absolutos, ignorar el consejo correcto dañó más el rendimiento. Cuando la IA mostraba en la imagen DÓNDE estaba el hallazgo, la sub-confianza bajó y el rendimiento subió, sobre todo en novatos.</p>
+        <div class="pred"><b>Predicción</b><span>opinión, sin fuente</span>El valor de un asistente no estará en dar la respuesta, sino en mostrar la evidencia que la sostiene. En tu Escriba, «aquí está el dato que apoya esto» vale más que la etiqueta diagnóstica.</div>
+        <a class="lnk" href="https://doi.org/10.1016/j.landig.2026.101050" target="_blank" rel="noopener">↗ DOI</a>
+      </article>
+      <article class="pcard">
+        <span class="rank">3</span>
+        <div class="src">J Surg Educ · 23 oct 2026 · Mazurek MH, et al. · prospectivo, un centro</div>
+        <h4>A 6-Session Case-Based Neurosurgery Curriculum Improves Medical Student Knowledge, Confidence, and Retention</h4>
+        <p>Cada sesión llevaba preguntas antes, preguntas después y preguntas de retención sobre sesiones anteriores. En el contenido que nadie sabía al inicio, el acierto pasó de 0% a 59% justo después y 53% en el seguimiento. Es el diseño que tu Tutor necesita para el patrón «una pieza por otra».</p>
+        <div class="pred"><b>Predicción</b><span>opinión, sin fuente</span>La retención se mide recién cuando vuelves a preguntar días después. Sin re-test del bloque anterior, el Tutor solo mide lo que recuerdas en el momento.</div>
+        <a class="lnk" href="https://doi.org/10.1016/j.jsurg.2026.104224" target="_blank" rel="noopener">↗ DOI</a>
+      </article></div>
+      <h5>📡 Radar</h5><ol class="radar">
+      <li class="ritem"><span class="rn">01</span><div>
+        <div class="src">Adv Simul · aleatorizado por equipos, n=110 · odontología, método transferible</div>
+        <div class="rt">Effects of reflection-through-action on collaborative clinical reasoning skills in an emergency dental simulation</div>
+        <div class="rl">Una pausa guiada A MITAD de la simulación (Pause-Analyze-Reflect-Strategize-Execute) no cambió los puntajes clásicos, pero en el caso siguiente los equipos conectaban mejor diagnóstico con acción.</div>
+        <div class="pred"><b>Predicción</b>La pausa en medio del caso, no solo el debriefing al final, puede ser lo que convierte la simulación en razonamiento transferible.</div><a class="lnk" href="https://doi.org/10.1186/s41077-026-00463-6" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">02</span><div>
+        <div class="src">Science · Nori H, et al. (Microsoft)</div>
+        <div class="rt">Sequential diagnosis with language models</div>
+        <div class="rl">Diagnóstico paso a paso pidiendo información; mide acierto Y costo de exámenes. IA 83.2% vs generalistas 36.1% en casos clínico-patológicos, en entorno controlado.</div>
+        <div class="pred"><b>Predicción</b>Medir cuántos exámenes pediste va a pesar tanto como acertar, sobre todo en primer nivel.</div><a class="lnk" href="https://doi.org/10.1126/science.aeh7930" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">03</span><div>
+        <div class="src">Eur Radiol · residentes de radiología, n=10</div>
+        <div class="rt">From dusk till dawn? Night shift-induced fatigue, diagnostic performance, and AI assistance in chest radiography</div>
+        <div class="rl">Tras la guardia, los residentes fatigados bajaron su precisión (κ 0.71 → 0.61) sin volverse más lentos. La IA usada no recuperó el rendimiento.</div>
+        <div class="pred"><b>Predicción</b>El cansancio no se siente como error: vas igual de rápido y te equivocas más. Relevante para tus guardias del SERUMS.</div><a class="lnk" href="https://doi.org/10.1007/s00330-026-12969-8" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">04</span><div>
+        <div class="src">J Eval Clin Pract · conceptual, sin datos</div>
+        <div class="rt">Structured Skepticism as a Meta-Regulatory Architecture in Clinical Reasoning</div>
+        <div class="rl">Propone el escepticismo estructurado como una interrupción deliberada que reabre el diferencial y evita el cierre prematuro. Es debiasing formulado como hábito.</div>
+        <div class="pred"><b>Predicción</b>Marco útil para nombrar lo que ya haces con «considerar lo opuesto»; falta validación empírica.</div><a class="lnk" href="https://doi.org/10.1111/jep.70701" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">05</span><div>
+        <div class="src">J Gynecol Obstet Hum Reprod · aleatorizado, 60 residentes</div>
+        <div class="rt">Artificial Intelligence-Enhanced Colposcopy Training Improves Diagnostic Reasoning and Communication Competencies</div>
+        <div class="rl">Una plataforma de paciente virtual con IA mejoró el análisis de casos y la justificación diagnóstica al mes; la habilidad operatoria no cambió.</div>
+        <div class="pred"><b>Predicción</b>Los pacientes virtuales sirven para razonar y comunicar, no para destrezas manuales.</div><a class="lnk" href="https://doi.org/10.1016/j.jogoh.2026.103307" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">06</span><div>
+        <div class="src">JMIR Med Educ · aleatorizado, n=51</div>
+        <div class="rt">Effects of a Generative AI Virtual Patient on Serious Illness Communication Skills: Randomized Controlled Trial</div>
+        <div class="rl">Practicar 30 minutos con un paciente virtual con IA y feedback automático mejoró la comunicación frente a leer el mismo material.</div>
+        <div class="pred"><b>Predicción</b>Practicar conversando le gana a leer, incluso con la misma teoría.</div><a class="lnk" href="https://doi.org/10.2196/93034" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">07</span><div>
+        <div class="src">JMIR Med Educ · aleatorizado, n=131 · solo percepción</div>
+        <div class="rt">Perceived Ratings of AI-Generated and Expert-Reviewed vs Clinician-Developed Virtual Cardiology Patient Scenarios</div>
+        <div class="rl">Un caso de síndrome coronario agudo generado con IA y revisado por expertos se percibió más realista y con menos carga cognitiva que uno hecho por clínicos. No midió aprendizaje objetivo.</div>
+        <div class="pred"><b>Predicción</b>Generar casos con IA es viable si un experto los revisa; falta probar que enseñen mejor.</div><a class="lnk" href="https://doi.org/10.2196/100839" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">08</span><div>
+        <div class="src">Int J Dermatol · Khandelwal A · opinión</div>
+        <div class="rt">The Differential That Never Gets Generated</div>
+        <div class="rl">Never-skilling: si la IA nombra el diagnóstico primero, el razonamiento nunca se forma.</div>
+        <div class="pred"><b>Predicción</b>El diferencial documentado antes de consultar a la IA va a volverse regla en residencias.</div><a class="lnk" href="https://doi.org/10.1111/ijd.70743" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">09</span><div>
+        <div class="src">NEJM AI · Restrepo D · ensayo</div>
+        <div class="rt">Raging against the Machine: The Human Side of the Story</div>
+        <div class="rl">Un internista y GPT-4 resolvieron en vivo el mismo caso; la IA acertó a menudo pero mostró anclaje y rigidez parecidos a los sesgos humanos.</div>
+        <div class="pred"><b>Predicción</b>La IA no te libra de sesgos: puede tener los mismos que tú.</div><a class="lnk" href="https://doi.org/10.1056/AIp2500439" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li>
+      <li class="ritem"><span class="rn">10</span><div>
+        <div class="src">J Antimicrob Chemother · Fihman V, et al.</div>
+        <div class="rt">Beyond the panel: molecular detection is not diagnosis</div>
+        <div class="rl">Detectar ácido nucleico no es diagnosticar infección: colonización, contaminación, antibiótico previo.</div>
+        <div class="pred"><b>Predicción</b>Pregunta ENAM probable: positivo sin clínica compatible, donde la respuesta correcta es no tratar.</div><a class="lnk" href="https://doi.org/10.1093/jac/dkag340" target="_blank" rel="noopener">↗ DOI</a>
+      </div></li></ol>
+      <div class="cols">
+        <div class="panel"><h5>💎 Perlas del día</h5><ul class="dots"><li>Los modelos de IA casi nunca respondían «este dato no cambia nada» en el Script Concordance Test: reconocer un dato irrelevante también es razonar. (NEJM AI)</li><li>En contenido que nadie sabía al inicio: 0% → 59% justo después → 53% en el seguimiento. La retención se mide volviendo a preguntar. (J Surg Educ)</li><li>Ignorar un consejo correcto de la IA dañó más el rendimiento que seguir uno incorrecto, en términos absolutos. (Lancet Digit Health)</li><li>Tras una guardia, los fatigados se equivocaron más pero NO fueron más lentos: el cansancio no avisa. (Eur Radiol)</li><li>Una pausa a mitad del caso no subió los puntajes clásicos, pero cambió cómo el equipo unía diagnóstico y acción en el caso siguiente. (Adv Simul)</li></ul></div>
+        <div class="panel"><h5>❓ Preguntas del día</h5><ul class="dots q"><li>En tu última pregunta ENAM con pista narrativa, ¿el dato clave subía, bajaba o no cambiaba la probabilidad?</li><li>¿Tu Tutor te vuelve a preguntar lo de la sesión anterior, o solo lo de hoy?</li><li>Cuando Claude te sugiere un diagnóstico, ¿te muestra el dato que lo sostiene o solo la etiqueta?</li><li>¿Cuántas de tus sesiones ENAM las haces cansado, y se nota en tu Error Log?</li><li>¿En qué momento de un caso del Paciente Estandarizado te vendría bien una pausa obligada?</li></ul></div>
+      </div>
+      <div class="panel"><h5>💡 Ideas del día</h5><ul class="ideas"><li><span class="tag" style="--k:#7c3aed">Tutor</span>Preguntas tipo SCT: caso + dato nuevo → ¿sube, baja o no cambia (−2 a +2)? Para entrenar pistas narrativas (NEJM AI)</li><li><span class="tag" style="--k:#7c3aed">Tutor</span>Abrir cada sesión con 2 preguntas de retención de la sesión anterior (J Surg Educ)</li><li><span class="tag" style="--k:#db2777">Paciente Std</span>Pausa obligada a mitad del caso: analiza, reflexiona, replantea, sigue (Adv Simul)</li><li><span class="tag" style="--k:#2563eb">Escriba</span>Que Claude muestre el dato que apoya cada sugerencia, no solo el diagnóstico (Lancet Digit Health)</li><li><span class="tag" style="--k:#d97706">ENAM</span>Anotar en el Error Log si la sesión fue de noche o cansado, para ver si el patrón cambia (Eur Radiol)</li></ul></div>
+      <p class="fine">Fuente: artículos obtenidos de PubMed · ventana 7 días (21–28 oct 2026, fecha de ingreso a PubMed).
+        Predicciones, preguntas e ideas son opinión del modelo, no evidencia.</p>
+    </div>
+  </section>
+  <section class="tab" id="actualidad">
+    <div class="pend poder">🏛️ Presidenta: Keiko Fujimori · Premier: Luis Galarreta · Congreso bicameral: Miki Torres (Senado), Óscar Reto (Diputados).</div>
+    <div class="block"><h3>🇵🇪 La Pepa (Nacional)</h3><div class="news"><h4>Visita a Bukele y al CECOT</h4><p>El Senado autorizó el viaje (37 a favor, 11 en contra, 1 abstención). La agenda incluye una reunión privada con Nayib Bukele y visitas al CECOT, una escuela y el Hospital Rosales, con escala en la Cumbre Iberoamericana de Madrid. Mientras la prensa tradicional lo presenta como intercambio de experiencias en seguridad, las voces críticas advierten que el modelo suspende garantías constitucionales y no se traslada fácilmente al Perú. Las fechas exactas difieren entre fuentes.</p>
+      <div class="fuentes"><a class="lnk" href="https://caretas.pe/politica/keiko-fujimori-viajara-a-el-salvador-que-hara-cual-es-su-agenda-y-con-quienes-se-reunira-en-centroamerica/" target="_blank" rel="noopener">↗ Caretas</a> · <a class="lnk" href="https://diariocorreo.pe/politica/senado-autoriza-viajes-de-keiko-fujimori-a-el-salvador-y-espana-con-37-votos-noticia/" target="_blank" rel="noopener">↗ Correo</a> · <a class="lnk" href="https://www.expreso.com.pe/?p=1320554" target="_blank" rel="noopener">↗ Expreso</a></div></div><div class="news"><h4>Paro nacional del SUTEP</h4><p>El SUTEP convocó a unos 200 000 docentes y jubilados a un paro nacional por presupuesto educativo y condiciones laborales y previsionales, coincidiendo con el viaje presidencial. El Minedu rechazó la medida y anunció descuentos a quienes no dicten clases. No encontré cifras de acatamiento por región al momento del reporte.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.infobae.com/peru/2026/10/26/sutep-anuncia-paro-nacional-contra-el-gobierno-durante-el-viaje-de-keiko-fujimori-a-el-salvador/" target="_blank" rel="noopener">↗ Infobae</a> · <a class="lnk" href="https://rpp.pe/politica/gobierno/minedu-rechaza-paro-del-29-de-octubre-anunciado-por-el-sutep-y-anuncia-descuentos-a-profesores-que-no-dicten-clases-noticia-1714928" target="_blank" rel="noopener">↗ RPP</a></div></div><div class="news"><h4>Congreso: invitación al premier</h4><p>La agenda del Pleno de Diputados incluye una moción para invitar al premier Galarreta y a otros ministros a informar, entre rumores —desmentidos por Fuerza Popular— sobre su posible salida de la PCM. Además, el 28 y 29 de octubre se realizan las primeras audiencias de proclamación de resultados distritales de las ERM 2026.</p>
+      <div class="fuentes"><a class="lnk" href="https://www3.congreso.gob.pe/Storage/modsnw/pdf/15982-Jy5Or6Gz4Gs2Xn1.pdf" target="_blank" rel="noopener">↗ Agenda del Pleno</a></div></div><div class="pend">⚠️ No encontré cobertura indexada de hoy de La Encerrona, Epicentro ni Sin Guion; el contrapunto se basa en críticas publicadas en prensa.</div></div>
+    <div class="block"><h3>🚨 Alarma de Narrativa</h3><div class="news"><h4>Agenda setting: la cárcel frente a la epidemia</h4><p>El viaje al CECOT concentra la cobertura el mismo día del paro docente y en la semana de cifras récord de leptospirosis y dengue. No hay evidencia de una cortina de humo deliberada, pero la seguridad punitiva ocupa la portada mientras presupuesto educativo y epidemias de El Niño quedan en segundo plano.</p>
+      <div class="fuentes"></div></div><div class="news"><h4>Framing de «intercambio de experiencias»</h4><p>Presentar la visita como aprendizaje en seguridad evita discutir si el modelo es compatible con el debido proceso en el Perú. Es framing, no necesariamente falso: conviene leer la cobertura con esa pregunta en mente.</p>
+      <div class="fuentes"></div></div></div>
+    <div class="block"><h3>💰 Dato Económico</h3>
+      <table class="tbl"><tr><th>Indicador</th><th>Valor</th><th>Fuente</th></tr><tr><td>Dólar / Sol (interbancario)</td><td><b>S/ 3,4546</b></td><td>El Comercio</td></tr><tr><td>Tasa de referencia BCRP</td><td><b>4,25 % (se mantuvo)</b></td><td>Infomercado</td></tr><tr><td>Brent</td><td><b>No encontrado hoy</b></td><td>—</td></tr><tr><td>WTI</td><td><b>No encontrado hoy</b></td><td>—</td></tr></table>
+      <p class="impact"><b>Impacto en ti:</b> El dólar bajó tras la decisión de la Fed de mantener tasas: se abarata un poco lo que pagues en dólares (libros, suscripciones, cursos). Con el BCRP en 4,25 % y una posible subida en el horizonte, los créditos en soles no deberían abaratarse pronto.</p><div class="fuentes"><a class="lnk" href="https://elcomercio.pe/economia/mercados/precio-del-dolar-en-peru-2026-a-cuanto-esta-el-dolar-este-jueves-29-de-octubre-tipo-de-cambio-segun-el-bcrp-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/" target="_blank" rel="noopener">↗ El Comercio</a> · <a class="lnk" href="https://infomercado.pe/bcrp-mantiene-su-tasa-en-4-25-y-sorprende-a-un-mercado-que-esperaba-un-alza/" target="_blank" rel="noopener">↗ Infomercado</a></div></div>
+  </section>
+  <section class="tab" id="ocio">
+    <div class="block"><h3>🌟 Lo mejor en streaming</h3><div class="pend">⚠️ Ningún título con score verificado sobre el Umbral de Oro (Metacritic &gt; 75 o Letterboxd &gt; 3.8) en Netflix, HBO Max o Disney+. Lo más cercano: Hoppers (Pixar), 73 en Metacritic.</div></div>
+    <div class="block"><h3>🆕 Estrenos de la semana</h3><div class="news"><h4>Streaming</h4><p>Netflix: Salario mínimo, la serie documental sobre Matthew Perry, Balaraw: La isla sangrienta y Colisión. HBO Max: The Paper T2, Guerra ep. 5 y The Moment. Disney+: final de American Horror Story. Críticas en formación; las fechas varían entre listas.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.quever.news/netflix/2026/10/26/estos-son-los-estrenos-de-la-semana-en-netflix-prime-video-disney-hbo-max-y-mas-105983.html" target="_blank" rel="noopener">↗ Quever</a> · <a class="lnk" href="https://blog.joinnus.com/estrenos-de-octubre-2026-en-netflix-hbo-max-disney-plus-y-prime-video/" target="_blank" rel="noopener">↗ Joinnus</a></div></div><div class="news"><h4>Cines</h4><p>Clayface (DC): 59 en Metacritic, 75 % en Rotten Tomatoes. Street Fighter: 44 en Metacritic. Ninguna pasa el umbral.</p>
+      <div class="fuentes"><a class="lnk" href="https://www.worldofreel.com/blog/2026/10/21/clayface-gets-mixed-reviews-59-on-metacritic-tracking-at-soft-18m20m-opening" target="_blank" rel="noopener">↗ World of Reel</a> · <a class="lnk" href="https://www.nintendolife.com/news/2026/10/round-up-the-reviews-for-the-street-fighter-movie-are-in" target="_blank" rel="noopener">↗ Nintendo Life</a></div></div></div>
+    <div class="block"><h3>🎟️ Cartelera</h3><div class="legend"><span class="cine" style="--c:#dc2626">MA</span> <span class="cine" style="--c:#2563eb">RP</span></div>
+      <table class="tbl"><tr><th>Sala</th><th>Película</th><th>Score</th><th>Horarios</th></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>Clayface</b></td><td>MC 59</td><td class="horas">15:30 · 17:50 · 20:10 · 22:40</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>Street Fighter</b></td><td>MC 44</td><td class="horas">16:20</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>El Corazón de la Bestia</b></td><td>—</td><td class="horas">15:20 · 17:40 · 20:00 · 22:30</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>El Pintor de los Milagros</b></td><td>—</td><td class="horas">14:40 · 17:00 · 19:20 · 21:40</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>La Caída de la Ballena</b></td><td>—</td><td class="horas">15:10 · 17:30 · 19:50 · 22:20</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>Madre Siniestra</b></td><td>—</td><td class="horas">15:00 · 17:20 · 19:30 · 21:50</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>El Heladero, Dulce Sabor a Muerte</b></td><td>—</td><td class="horas">14:00 · 16:00 · 18:00 · 20:00 · 22:00</td></tr><tr><td><span class="cine" style="--c:#dc2626">MA</span></td><td><b>Ekeko</b></td><td>—</td><td class="horas">19:00 · 21:10</td></tr></table>
+      <p class="fine">Todas en función doblada. «—» = sin score encontrado. RP sin sesiones registradas hoy.</p></div>
+    <div class="block"><h3>🎯 Veredicto para Lucho</h3><p>Ninguna película en cartelera pasa el Umbral de Oro: Clayface es la mejor valorada, pero con 59 es entretenida, no imprescindible. En streaming tampoco hay nada verificado sobre el umbral; Hoppers (73) es más plan liviano que cine de autor.</p>
+      <blockquote class="frase">«Semana floja en ambos frentes — buen momento para el backlog.»</blockquote></div>
+    <div class="block"><h3>📺 YouTube Watchlist</h3>
+      <table class="tbl"><tr><th></th><th>Canal</th><th>Video</th><th>Dur.</th></tr><tr><td>🔴</td><td><b>Mediesfera</b><div class="fine">🩺 Medicina</div></td>
+      <td><a href="https://youtu.be/MFeAfc9RLrs" target="_blank" rel="noopener">PALUDISMO: TRANSMISIÓN, SÍNTOMAS, DIAGNÓSTICO Y TRATAMIENTO DE LA MALARIA 🦟🩸</a></td><td class="horas">27:10</td></tr><tr><td>🔴</td><td><b>Pitucos Marrones</b><div class="fine">🇵🇪 Política</div></td>
+      <td><a href="https://youtu.be/rTeNEE9Vq_s" target="_blank" rel="noopener">LA IMPLOSIÓN DEL BUEN GOBIERNO: ¿GAVIRIA LOS HUEVEO POR SEMANAS? ¿SUSANA MATUTE TIBIA DE TIBIAS?</a></td><td class="horas">24:06</td></tr><tr><td>🔴</td><td><b>Pitucos Marrones</b><div class="fine">🇵🇪 Política</div></td>
+      <td><a href="https://youtu.be/oWDUUVtEjQ0" target="_blank" rel="noopener">¿ESTA MAL QUE GALARRETA Y KEIKO CONVOQUEN PERIODISTAS? ¿SON PERIODISTAS O RELACIONISTAS PÚBLICOS?</a></td><td class="horas">20:02</td></tr><tr><td>🔴</td><td><b>Han Chui Priest</b><div class="fine">🌍 Filosofía</div></td>
+      <td><a href="https://youtu.be/OFQFvC9b_HQ" target="_blank" rel="noopener">Komanche: ¿qué esperanza queda ante una muerte inesperada? | Padre Han Reacciona</a></td><td class="horas">20:13</td></tr><tr><td>🟡</td><td><b>Abelca</b><div class="fine">🎬 Lifestyle</div></td>
+      <td><a href="https://youtu.be/AQLzzHEsijM" target="_blank" rel="noopener">¡Así se prepara un buen estofado de POLLO, casero y lleno de sabor!</a></td><td class="horas">2:59</td></tr></table>
+      <p class="fine">Últimas 24 h · 17/17 canales revisados · 🔴 imprescindible · 🟡 opcional. Ideas por video pendientes (falta configurar la API).</p></div>
+  </section>
+  <footer>Gran Dossier · generado automáticamente</footer>
+</main><script>
+const tabs=[...document.querySelectorAll('nav.tabs button')],panels=[...document.querySelectorAll('.tab')];
+function show(id){tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===id));panels.forEach(p=>p.classList.toggle('on',p.id===id));
+  try{history.replaceState(null,'','#'+id)}catch(_){}}
+tabs.forEach(b=>b.onclick=()=>show(b.dataset.t));
+show(['medicina','actualidad','ocio'].includes(location.hash.slice(1))?location.hash.slice(1):'medicina');
+</script></body></html>

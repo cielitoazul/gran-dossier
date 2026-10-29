@@ -1,0 +1,446 @@
+{
+  "fecha": "2026-10-29",
+  "resumen": [
+    "Medicina: dengue y leptospirosis en alza ante El Niño; la vacuna contra el dengue se amplía a EsSalud (RM 946-2026).",
+    "País: la presidenta visita a Bukele y el CECOT mientras el SUTEP acata un paro nacional por presupuesto educativo.",
+    "Ocio: semana floja en cine y streaming — buen momento para el backlog."
+  ],
+  "evangelio": {
+    "dia_liturgico": "Miércoles 28 de octubre · Fiesta de Santos Simón y Judas",
+    "cita": "Lucas 6, 12-19",
+    "versiculo": "Jesús se retiró a una montaña para orar, y pasó toda la noche en oración con Dios.",
+    "versiculo_cita": "Lc 6, 12",
+    "idea_central": "Antes de elegir a los Doce, Jesús no calcula: ora toda la noche. Y no elige a los más capaces, sino que capacita a los que llama.",
+    "url": "https://www.algodelevangelio.org/evangelio/lucas-6-12-19-fiesta-de-santos-simon-y-judas-4/",
+    "fuente": "Algo del Evangelio",
+    "nota": "Algo del Evangelio aún no publica el del jueves 29; se muestra el más reciente."
+  },
+  "medicina": {
+    "radar_medico": [
+      {
+        "titulo": "Dengue y leptospirosis en alza ante El Niño",
+        "texto": "Según el CDC-Minsa, hasta la semana epidemiológica 41 el Perú acumula 76 784 casos de dengue con 81 fallecidos y más de 13 000 casos de leptospirosis con 50 fallecidos. El Minsa emitió una alerta epidemiológica por El Niño 2026-2027 y prepara más de 5 000 brigadistas y 30 puestos médicos. Momento de tener frescos el dengue con signos de alarma y la sospecha de leptospirosis en el síndrome febril.",
+        "fuentes": [
+          {
+            "label": "Infobae",
+            "url": "https://www.infobae.com/peru/2026/10/28/leptospirosis-alcanza-cifras-historicas-en-peru-y-el-dengue-se-dispara-ante-el-nino-estamos-ante-las-peores-epidemias/"
+          },
+          {
+            "label": "Perú21",
+            "url": "https://peru21.pe/peru/minsa-emite-alerta-epidemiologica-por-fenomeno-el-nino/"
+          }
+        ]
+      },
+      {
+        "titulo": "Vacunación contra el dengue se amplía a EsSalud",
+        "texto": "La RM N.° 946-2026/MINSA, publicada el 24 de octubre, actualiza la norma técnica de vacunación contra el dengue e incorpora a los establecimientos de EsSalud como puntos de vacunación. Norma peruana aplicable en el primer nivel: vale leer la NTS completa y anotarla con procedencia [NTS MINSA].",
+        "fuentes": [
+          {
+            "label": "ConsultorSalud",
+            "url": "https://consultorsalud.com/peru-vacunacion-contra-el-dengue-essalud/"
+          }
+        ]
+      },
+      {
+        "titulo": "Sarampión y nuevos medicamentos",
+        "texto": "Perú registra más de 1 700 casos de sarampión en 2026 según el Minsa, y se aprobaron ocho medicamentos para VIH y hepatitis B y C. El sarampión es clásico de salud pública en el ENAM: caso sospechoso, notificación inmediata y cerco epidemiológico. Sin novedades de ENAM ni SERUMS 2026-II en esta búsqueda.",
+        "fuentes": [
+          {
+            "label": "Minsa",
+            "url": "https://www.gob.pe/institucion/minsa/noticias"
+          }
+        ]
+      },
+      {
+        "titulo": "IA Watch · Anthropic",
+        "texto": "Anthropic adquirió la biotech Mithril Medicine y anunció alianzas de descubrimiento de fármacos con Claude. Su documento de salida a bolsa reconoce que menores y personas en riesgo suicida han usado Claude y que sus efectos a largo plazo en salud mental son desconocidos — razón más para no tomar sus salidas como verificadas.",
+        "fuentes": [
+          {
+            "label": "EEW Magazine",
+            "url": "https://www.eewmagazineonline.com/health-and-wellness/2026/10/27/anthropic-children-claude-ai-mental-health"
+          },
+          {
+            "label": "The Signal",
+            "url": "https://thesignal.substack.com/p/anthropic-pulls-away-openai-strikes"
+          }
+        ]
+      },
+      {
+        "titulo": "IA Watch · Google y OpenAI",
+        "texto": "Google presentó Gemini 4 Carbon, que según reportes encabezó el índice de Artificial Analysis (59) frente a Claude Opus 5.5 (58) y GPT-6 Astra (57), por ahora solo para defensores de ciberseguridad. OpenAI bajó el precio de GPT-6.1 Terra y enfrenta una demanda por consejos médicos de ChatGPT. Nombres de modelos provisionales: difieren entre fuentes.",
+        "fuentes": [
+          {
+            "label": "Gulf News",
+            "url": "https://gulfnews.com/technology/google-unveils-gemini-4-carbon-with-top-ai-benchmark-score-expands-focus-on-cybersecurity-1.500727714"
+          },
+          {
+            "label": "AI Weekly",
+            "url": "https://aiweekly.co/ai-news-today"
+          }
+        ]
+      }
+    ],
+    "dossier": {
+      "titulo": "Razonamiento Clínico & Educación Médica",
+      "top3": [
+        {
+          "titulo": "Assessment of Large Language Models in Clinical Reasoning: A Novel Benchmarking Study",
+          "fuente": "NEJM AI · McCoy LG, Rodman A, et al. · ingresó a PubMed esta semana",
+          "doi": "10.1056/AIdbp2500120",
+          "por_que_te_importa": "Usa el Script Concordance Test: te dan un caso, luego un dato nuevo, y respondes cuánto cambia la probabilidad de un diagnóstico (de −2 a +2). Es exactamente la habilidad de leer pistas narrativas. Los modelos de IA rindieron peor que en exámenes de opción múltiple, no alcanzaron a residentes senior y mostraron sobreconfianza: usaban mucho los extremos y casi nunca respondían 0 («este dato no cambia nada»).",
+          "prediccion": "Las preguntas tipo SCT van a crecer en exámenes de razonamiento porque miden lo que la opción múltiple no mide. Si entrenas «¿este dato sube, baja o no cambia?», atacas directo tu falla con pistas narrativas."
+        },
+        {
+          "titulo": "Examining reliance patterns on AI advice in medical imaging: a mixed-methods, randomised, crossover experiment",
+          "fuente": "Lancet Digit Health · 23 oct 2026 · Gaube S, et al. · aleatorizado, 125 lectores",
+          "doi": "10.1016/j.landig.2026.101050",
+          "por_que_te_importa": "Con IA se cometen dos errores: creerle cuando se equivoca (sobre-confianza) e ignorarla cuando acierta (sub-confianza). En términos absolutos, ignorar el consejo correcto dañó más el rendimiento. Cuando la IA mostraba en la imagen DÓNDE estaba el hallazgo, la sub-confianza bajó y el rendimiento subió, sobre todo en novatos.",
+          "prediccion": "El valor de un asistente no estará en dar la respuesta, sino en mostrar la evidencia que la sostiene. En tu Escriba, «aquí está el dato que apoya esto» vale más que la etiqueta diagnóstica."
+        },
+        {
+          "titulo": "A 6-Session Case-Based Neurosurgery Curriculum Improves Medical Student Knowledge, Confidence, and Retention",
+          "fuente": "J Surg Educ · 23 oct 2026 · Mazurek MH, et al. · prospectivo, un centro",
+          "doi": "10.1016/j.jsurg.2026.104224",
+          "por_que_te_importa": "Cada sesión llevaba preguntas antes, preguntas después y preguntas de retención sobre sesiones anteriores. En el contenido que nadie sabía al inicio, el acierto pasó de 0% a 59% justo después y 53% en el seguimiento. Es el diseño que tu Tutor necesita para el patrón «una pieza por otra».",
+          "prediccion": "La retención se mide recién cuando vuelves a preguntar días después. Sin re-test del bloque anterior, el Tutor solo mide lo que recuerdas en el momento."
+        }
+      ],
+      "radar": [
+        {
+          "titulo": "Effects of reflection-through-action on collaborative clinical reasoning skills in an emergency dental simulation",
+          "fuente": "Adv Simul · aleatorizado por equipos, n=110 · odontología, método transferible",
+          "doi": "10.1186/s41077-026-00463-6",
+          "una_linea": "Una pausa guiada A MITAD de la simulación (Pause-Analyze-Reflect-Strategize-Execute) no cambió los puntajes clásicos, pero en el caso siguiente los equipos conectaban mejor diagnóstico con acción.",
+          "prediccion": "La pausa en medio del caso, no solo el debriefing al final, puede ser lo que convierte la simulación en razonamiento transferible."
+        },
+        {
+          "titulo": "Sequential diagnosis with language models",
+          "fuente": "Science · Nori H, et al. (Microsoft)",
+          "doi": "10.1126/science.aeh7930",
+          "una_linea": "Diagnóstico paso a paso pidiendo información; mide acierto Y costo de exámenes. IA 83.2% vs generalistas 36.1% en casos clínico-patológicos, en entorno controlado.",
+          "prediccion": "Medir cuántos exámenes pediste va a pesar tanto como acertar, sobre todo en primer nivel."
+        },
+        {
+          "titulo": "From dusk till dawn? Night shift-induced fatigue, diagnostic performance, and AI assistance in chest radiography",
+          "fuente": "Eur Radiol · residentes de radiología, n=10",
+          "doi": "10.1007/s00330-026-12969-8",
+          "una_linea": "Tras la guardia, los residentes fatigados bajaron su precisión (κ 0.71 → 0.61) sin volverse más lentos. La IA usada no recuperó el rendimiento.",
+          "prediccion": "El cansancio no se siente como error: vas igual de rápido y te equivocas más. Relevante para tus guardias del SERUMS."
+        },
+        {
+          "titulo": "Structured Skepticism as a Meta-Regulatory Architecture in Clinical Reasoning",
+          "fuente": "J Eval Clin Pract · conceptual, sin datos",
+          "doi": "10.1111/jep.70701",
+          "una_linea": "Propone el escepticismo estructurado como una interrupción deliberada que reabre el diferencial y evita el cierre prematuro. Es debiasing formulado como hábito.",
+          "prediccion": "Marco útil para nombrar lo que ya haces con «considerar lo opuesto»; falta validación empírica."
+        },
+        {
+          "titulo": "Artificial Intelligence-Enhanced Colposcopy Training Improves Diagnostic Reasoning and Communication Competencies",
+          "fuente": "J Gynecol Obstet Hum Reprod · aleatorizado, 60 residentes",
+          "doi": "10.1016/j.jogoh.2026.103307",
+          "una_linea": "Una plataforma de paciente virtual con IA mejoró el análisis de casos y la justificación diagnóstica al mes; la habilidad operatoria no cambió.",
+          "prediccion": "Los pacientes virtuales sirven para razonar y comunicar, no para destrezas manuales."
+        },
+        {
+          "titulo": "Effects of a Generative AI Virtual Patient on Serious Illness Communication Skills: Randomized Controlled Trial",
+          "fuente": "JMIR Med Educ · aleatorizado, n=51",
+          "doi": "10.2196/93034",
+          "una_linea": "Practicar 30 minutos con un paciente virtual con IA y feedback automático mejoró la comunicación frente a leer el mismo material.",
+          "prediccion": "Practicar conversando le gana a leer, incluso con la misma teoría."
+        },
+        {
+          "titulo": "Perceived Ratings of AI-Generated and Expert-Reviewed vs Clinician-Developed Virtual Cardiology Patient Scenarios",
+          "fuente": "JMIR Med Educ · aleatorizado, n=131 · solo percepción",
+          "doi": "10.2196/100839",
+          "una_linea": "Un caso de síndrome coronario agudo generado con IA y revisado por expertos se percibió más realista y con menos carga cognitiva que uno hecho por clínicos. No midió aprendizaje objetivo.",
+          "prediccion": "Generar casos con IA es viable si un experto los revisa; falta probar que enseñen mejor."
+        },
+        {
+          "titulo": "The Differential That Never Gets Generated",
+          "fuente": "Int J Dermatol · Khandelwal A · opinión",
+          "doi": "10.1111/ijd.70743",
+          "una_linea": "Never-skilling: si la IA nombra el diagnóstico primero, el razonamiento nunca se forma.",
+          "prediccion": "El diferencial documentado antes de consultar a la IA va a volverse regla en residencias."
+        },
+        {
+          "titulo": "Raging against the Machine: The Human Side of the Story",
+          "fuente": "NEJM AI · Restrepo D · ensayo",
+          "doi": "10.1056/AIp2500439",
+          "una_linea": "Un internista y GPT-4 resolvieron en vivo el mismo caso; la IA acertó a menudo pero mostró anclaje y rigidez parecidos a los sesgos humanos.",
+          "prediccion": "La IA no te libra de sesgos: puede tener los mismos que tú."
+        },
+        {
+          "titulo": "Beyond the panel: molecular detection is not diagnosis",
+          "fuente": "J Antimicrob Chemother · Fihman V, et al.",
+          "doi": "10.1093/jac/dkag340",
+          "una_linea": "Detectar ácido nucleico no es diagnosticar infección: colonización, contaminación, antibiótico previo.",
+          "prediccion": "Pregunta ENAM probable: positivo sin clínica compatible, donde la respuesta correcta es no tratar."
+        }
+      ],
+      "perlas": [
+        "Los modelos de IA casi nunca respondían «este dato no cambia nada» en el Script Concordance Test: reconocer un dato irrelevante también es razonar. (NEJM AI)",
+        "En contenido que nadie sabía al inicio: 0% → 59% justo después → 53% en el seguimiento. La retención se mide volviendo a preguntar. (J Surg Educ)",
+        "Ignorar un consejo correcto de la IA dañó más el rendimiento que seguir uno incorrecto, en términos absolutos. (Lancet Digit Health)",
+        "Tras una guardia, los fatigados se equivocaron más pero NO fueron más lentos: el cansancio no avisa. (Eur Radiol)",
+        "Una pausa a mitad del caso no subió los puntajes clásicos, pero cambió cómo el equipo unía diagnóstico y acción en el caso siguiente. (Adv Simul)"
+      ],
+      "preguntas": [
+        "En tu última pregunta ENAM con pista narrativa, ¿el dato clave subía, bajaba o no cambiaba la probabilidad?",
+        "¿Tu Tutor te vuelve a preguntar lo de la sesión anterior, o solo lo de hoy?",
+        "Cuando Claude te sugiere un diagnóstico, ¿te muestra el dato que lo sostiene o solo la etiqueta?",
+        "¿Cuántas de tus sesiones ENAM las haces cansado, y se nota en tu Error Log?",
+        "¿En qué momento de un caso del Paciente Estandarizado te vendría bien una pausa obligada?"
+      ],
+      "ideas": [
+        {
+          "idea": "Preguntas tipo SCT: caso + dato nuevo → ¿sube, baja o no cambia (−2 a +2)? Para entrenar pistas narrativas (NEJM AI)",
+          "tipo": "tutor"
+        },
+        {
+          "idea": "Abrir cada sesión con 2 preguntas de retención de la sesión anterior (J Surg Educ)",
+          "tipo": "tutor"
+        },
+        {
+          "idea": "Pausa obligada a mitad del caso: analiza, reflexiona, replantea, sigue (Adv Simul)",
+          "tipo": "paciente"
+        },
+        {
+          "idea": "Que Claude muestre el dato que apoya cada sugerencia, no solo el diagnóstico (Lancet Digit Health)",
+          "tipo": "escriba"
+        },
+        {
+          "idea": "Anotar en el Error Log si la sesión fue de noche o cansado, para ver si el patrón cambia (Eur Radiol)",
+          "tipo": "enam"
+        }
+      ],
+      "meta": {
+        "fuente": "PubMed",
+        "ventana": "7 días (21–28 oct 2026, fecha de ingreso a PubMed)",
+        "encontrados": 225,
+        "revisados": 79,
+        "incluidos": 13
+      }
+    }
+  },
+  "actualidad": {
+    "poder": "Presidenta: Keiko Fujimori · Premier: Luis Galarreta · Congreso bicameral: Miki Torres (Senado), Óscar Reto (Diputados).",
+    "nacional": [
+      {
+        "titulo": "Visita a Bukele y al CECOT",
+        "texto": "El Senado autorizó el viaje (37 a favor, 11 en contra, 1 abstención). La agenda incluye una reunión privada con Nayib Bukele y visitas al CECOT, una escuela y el Hospital Rosales, con escala en la Cumbre Iberoamericana de Madrid. Mientras la prensa tradicional lo presenta como intercambio de experiencias en seguridad, las voces críticas advierten que el modelo suspende garantías constitucionales y no se traslada fácilmente al Perú. Las fechas exactas difieren entre fuentes.",
+        "fuentes": [
+          {
+            "label": "Caretas",
+            "url": "https://caretas.pe/politica/keiko-fujimori-viajara-a-el-salvador-que-hara-cual-es-su-agenda-y-con-quienes-se-reunira-en-centroamerica/"
+          },
+          {
+            "label": "Correo",
+            "url": "https://diariocorreo.pe/politica/senado-autoriza-viajes-de-keiko-fujimori-a-el-salvador-y-espana-con-37-votos-noticia/"
+          },
+          {
+            "label": "Expreso",
+            "url": "https://www.expreso.com.pe/?p=1320554"
+          }
+        ]
+      },
+      {
+        "titulo": "Paro nacional del SUTEP",
+        "texto": "El SUTEP convocó a unos 200 000 docentes y jubilados a un paro nacional por presupuesto educativo y condiciones laborales y previsionales, coincidiendo con el viaje presidencial. El Minedu rechazó la medida y anunció descuentos a quienes no dicten clases. No encontré cifras de acatamiento por región al momento del reporte.",
+        "fuentes": [
+          {
+            "label": "Infobae",
+            "url": "https://www.infobae.com/peru/2026/10/26/sutep-anuncia-paro-nacional-contra-el-gobierno-durante-el-viaje-de-keiko-fujimori-a-el-salvador/"
+          },
+          {
+            "label": "RPP",
+            "url": "https://rpp.pe/politica/gobierno/minedu-rechaza-paro-del-29-de-octubre-anunciado-por-el-sutep-y-anuncia-descuentos-a-profesores-que-no-dicten-clases-noticia-1714928"
+          }
+        ]
+      },
+      {
+        "titulo": "Congreso: invitación al premier",
+        "texto": "La agenda del Pleno de Diputados incluye una moción para invitar al premier Galarreta y a otros ministros a informar, entre rumores —desmentidos por Fuerza Popular— sobre su posible salida de la PCM. Además, el 28 y 29 de octubre se realizan las primeras audiencias de proclamación de resultados distritales de las ERM 2026.",
+        "fuentes": [
+          {
+            "label": "Agenda del Pleno",
+            "url": "https://www3.congreso.gob.pe/Storage/modsnw/pdf/15982-Jy5Or6Gz4Gs2Xn1.pdf"
+          }
+        ]
+      }
+    ],
+    "aviso_nivel2": "No encontré cobertura indexada de hoy de La Encerrona, Epicentro ni Sin Guion; el contrapunto se basa en críticas publicadas en prensa.",
+    "narrativa": [
+      {
+        "titulo": "Agenda setting: la cárcel frente a la epidemia",
+        "texto": "El viaje al CECOT concentra la cobertura el mismo día del paro docente y en la semana de cifras récord de leptospirosis y dengue. No hay evidencia de una cortina de humo deliberada, pero la seguridad punitiva ocupa la portada mientras presupuesto educativo y epidemias de El Niño quedan en segundo plano."
+      },
+      {
+        "titulo": "Framing de «intercambio de experiencias»",
+        "texto": "Presentar la visita como aprendizaje en seguridad evita discutir si el modelo es compatible con el debido proceso en el Perú. Es framing, no necesariamente falso: conviene leer la cobertura con esa pregunta en mente."
+      }
+    ],
+    "economico": {
+      "filas": [
+        [
+          "Dólar / Sol (interbancario)",
+          "S/ 3,4546",
+          "El Comercio"
+        ],
+        [
+          "Tasa de referencia BCRP",
+          "4,25 % (se mantuvo)",
+          "Infomercado"
+        ],
+        [
+          "Brent",
+          "No encontrado hoy",
+          "—"
+        ],
+        [
+          "WTI",
+          "No encontrado hoy",
+          "—"
+        ]
+      ],
+      "impacto": "El dólar bajó tras la decisión de la Fed de mantener tasas: se abarata un poco lo que pagues en dólares (libros, suscripciones, cursos). Con el BCRP en 4,25 % y una posible subida en el horizonte, los créditos en soles no deberían abaratarse pronto.",
+      "fuentes": [
+        {
+          "label": "El Comercio",
+          "url": "https://elcomercio.pe/economia/mercados/precio-del-dolar-en-peru-2026-a-cuanto-esta-el-dolar-este-jueves-29-de-octubre-tipo-de-cambio-segun-el-bcrp-tasa-cotizacion-compra-y-venta-segun-bcrp-dolares-a-soles-sbs-ocona-lbposting-noticia/"
+        },
+        {
+          "label": "Infomercado",
+          "url": "https://infomercado.pe/bcrp-mantiene-su-tasa-en-4-25-y-sorprende-a-un-mercado-que-esperaba-un-alza/"
+        }
+      ]
+    }
+  },
+  "ocio": {
+    "streaming": "Ningún título con score verificado sobre el Umbral de Oro (Metacritic > 75 o Letterboxd > 3.8) en Netflix, HBO Max o Disney+. Lo más cercano: Hoppers (Pixar), 73 en Metacritic.",
+    "estrenos": [
+      {
+        "titulo": "Streaming",
+        "texto": "Netflix: Salario mínimo, la serie documental sobre Matthew Perry, Balaraw: La isla sangrienta y Colisión. HBO Max: The Paper T2, Guerra ep. 5 y The Moment. Disney+: final de American Horror Story. Críticas en formación; las fechas varían entre listas.",
+        "fuentes": [
+          {
+            "label": "Quever",
+            "url": "https://www.quever.news/netflix/2026/10/26/estos-son-los-estrenos-de-la-semana-en-netflix-prime-video-disney-hbo-max-y-mas-105983.html"
+          },
+          {
+            "label": "Joinnus",
+            "url": "https://blog.joinnus.com/estrenos-de-octubre-2026-en-netflix-hbo-max-disney-plus-y-prime-video/"
+          }
+        ]
+      },
+      {
+        "titulo": "Cines",
+        "texto": "Clayface (DC): 59 en Metacritic, 75 % en Rotten Tomatoes. Street Fighter: 44 en Metacritic. Ninguna pasa el umbral.",
+        "fuentes": [
+          {
+            "label": "World of Reel",
+            "url": "https://www.worldofreel.com/blog/2026/10/21/clayface-gets-mixed-reviews-59-on-metacritic-tracking-at-soft-18m20m-opening"
+          },
+          {
+            "label": "Nintendo Life",
+            "url": "https://www.nintendolife.com/news/2026/10/round-up-the-reviews-for-the-street-fighter-movie-are-in"
+          }
+        ]
+      }
+    ],
+    "cartelera": {
+      "MA": [
+        [
+          "Clayface",
+          "MC 59",
+          "15:30 · 17:50 · 20:10 · 22:40"
+        ],
+        [
+          "Street Fighter",
+          "MC 44",
+          "16:20"
+        ],
+        [
+          "El Corazón de la Bestia",
+          "—",
+          "15:20 · 17:40 · 20:00 · 22:30"
+        ],
+        [
+          "El Pintor de los Milagros",
+          "—",
+          "14:40 · 17:00 · 19:20 · 21:40"
+        ],
+        [
+          "La Caída de la Ballena",
+          "—",
+          "15:10 · 17:30 · 19:50 · 22:20"
+        ],
+        [
+          "Madre Siniestra",
+          "—",
+          "15:00 · 17:20 · 19:30 · 21:50"
+        ],
+        [
+          "El Heladero, Dulce Sabor a Muerte",
+          "—",
+          "14:00 · 16:00 · 18:00 · 20:00 · 22:00"
+        ],
+        [
+          "Ekeko",
+          "—",
+          "19:00 · 21:10"
+        ]
+      ],
+      "RP": [],
+      "nota": "Todas en función doblada. «—» = sin score encontrado. RP sin sesiones registradas hoy."
+    },
+    "veredicto": {
+      "texto": "Ninguna película en cartelera pasa el Umbral de Oro: Clayface es la mejor valorada, pero con 59 es entretenida, no imprescindible. En streaming tampoco hay nada verificado sobre el umbral; Hoppers (73) es más plan liviano que cine de autor.",
+      "frase": "Semana floja en ambos frentes — buen momento para el backlog."
+    },
+    "youtube": {
+      "videos": [
+        [
+          "Mediesfera",
+          "🩺 Medicina",
+          "PALUDISMO: TRANSMISIÓN, SÍNTOMAS, DIAGNÓSTICO Y TRATAMIENTO DE LA MALARIA 🦟🩸",
+          "27:10",
+          "🔴",
+          "https://youtu.be/MFeAfc9RLrs"
+        ],
+        [
+          "Pitucos Marrones",
+          "🇵🇪 Política",
+          "LA IMPLOSIÓN DEL BUEN GOBIERNO: ¿GAVIRIA LOS HUEVEO POR SEMANAS? ¿SUSANA MATUTE TIBIA DE TIBIAS?",
+          "24:06",
+          "🔴",
+          "https://youtu.be/rTeNEE9Vq_s"
+        ],
+        [
+          "Pitucos Marrones",
+          "🇵🇪 Política",
+          "¿ESTA MAL QUE GALARRETA Y KEIKO CONVOQUEN PERIODISTAS? ¿SON PERIODISTAS O RELACIONISTAS PÚBLICOS?",
+          "20:02",
+          "🔴",
+          "https://youtu.be/oWDUUVtEjQ0"
+        ],
+        [
+          "Han Chui Priest",
+          "🌍 Filosofía",
+          "Komanche: ¿qué esperanza queda ante una muerte inesperada? | Padre Han Reacciona",
+          "20:13",
+          "🔴",
+          "https://youtu.be/OFQFvC9b_HQ"
+        ],
+        [
+          "Abelca",
+          "🎬 Lifestyle",
+          "¡Así se prepara un buen estofado de POLLO, casero y lleno de sabor!",
+          "2:59",
+          "🟡",
+          "https://youtu.be/AQLzzHEsijM"
+        ]
+      ],
+      "nota": "Últimas 24 h · 17/17 canales revisados · 🔴 imprescindible · 🟡 opcional. Ideas por video pendientes (falta configurar la API)."
+    }
+  }
+}

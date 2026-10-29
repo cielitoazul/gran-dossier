@@ -1,28 +1,67 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gran Dossier</title>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gran Dossier</title>
 <style>
-  :root { --bg:#f8fafc; --card:#fff; --text:#0f172a; --muted:#64748b; --accent:#2563eb; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0d0f14; --card:#13161d; --text:#e8eaf0; --muted:#8b90a0; --accent:#60a5fa; }
-  }
-  * { box-sizing:border-box; margin:0; }
-  body { font-family:-apple-system,system-ui,sans-serif; background:var(--bg); color:var(--text);
-         min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px 16px; }
-  .card { background:var(--card); border-radius:16px; padding:32px 28px; max-width:480px; width:100%;
-          box-shadow:0 1px 3px #0002; text-align:center; }
-  h1 { font-size:28px; margin-bottom:8px; }
-  p { color:var(--muted); line-height:1.5; }
-  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--accent); margin-right:6px; }
-</style>
-</head>
-<body>
-  <div class="card">
-    <h1>📚 Gran Dossier</h1>
-    <p><span class="dot"></span>En construcción</p>
-  </div>
-</body>
-</html>
+:root{--bg:#f8fafc;--card:#fff;--soft:#f1f5f9;--line:#e2e8f0;--text:#0f172a;--muted:#64748b;--dim:#94a3b8;
+  --accent:#2563eb;--accent-soft:#eff6ff;--gold:#b45309;--gold-soft:#fffbeb;}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d12;--card:#13161d;--soft:#1a1e28;--line:#252a36;--text:#e8eaf0;
+  --muted:#9aa0b0;--dim:#5f6678;--accent:#60a5fa;--accent-soft:#172033;--gold:#fbbf24;--gold-soft:#231d0f;}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,system-ui,'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)} .wrap{max-width:860px;margin:0 auto;padding:20px 16px 64px}
+header.top{padding:24px 16px 8px;max-width:860px;margin:0 auto}
+.back{font-size:13px;color:var(--muted);text-decoration:none} h1{font-size:26px;font-weight:800;margin-top:6px}
+.sub{color:var(--muted);font-size:14px;text-transform:capitalize}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.summary h2{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.summary li{margin:6px 0 6px 18px;font-size:15px}
+.gospel{background:var(--gold-soft);border:1px solid color-mix(in srgb,var(--gold) 30%,transparent);border-radius:14px;padding:16px 18px;margin-bottom:18px}
+.g-head{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)} .g-head span{text-transform:none;font-weight:500}
+blockquote{font-size:17px;font-style:italic;margin:10px 0 8px} cite{font-style:normal;font-size:13px;color:var(--muted)}
+.gospel p{font-size:14px;color:var(--muted);margin-bottom:8px}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--bg);display:flex;gap:6px;padding:10px 0;border-bottom:1px solid var(--line)}
+nav.tabs button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:10px;padding:10px 6px;font-size:14px;font-weight:600;cursor:pointer}
+nav.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.tab{display:none;padding-top:16px} .tab.on{display:block}
+.block{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px}
+.block h3{font-size:16px;margin-bottom:10px} h5{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+.pend{background:var(--soft);border:1px dashed var(--line);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--muted)}
+.stats{display:flex;gap:8px;flex-wrap:wrap} .stats span{background:var(--soft);border-radius:99px;padding:3px 10px;font-size:12px;color:var(--muted)}
+.stats b{color:var(--accent)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.pcard{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px}
+.pcard.first{border-color:var(--accent);background:var(--accent-soft)}
+.rank{position:absolute;top:12px;right:12px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.src{font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--dim);margin-bottom:4px;padding-right:28px}
+.pcard h4{font-size:15px;line-height:1.35;margin-bottom:8px} .pcard p{font-size:13.5px;color:var(--muted);margin-bottom:10px}
+.pred{font-size:13px;background:var(--card);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:7px 10px;margin:6px 0 8px}
+.pred b{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.pred span{font-size:10.5px;color:var(--dim);margin-left:4px} .pcard .pred{background:var(--card)}
+.lnk{font-size:12px;font-weight:600;text-decoration:none}
+.radar{list-style:none} .ritem{display:grid;grid-template-columns:28px 1fr;gap:8px;padding:12px 0;border-top:1px solid var(--line)}
+.rn{font-weight:700;color:var(--accent);font-size:13px} .rt{font-weight:600;font-size:14px} .rl{font-size:13.5px;color:var(--muted);margin:2px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.panel{background:var(--soft);border-radius:12px;padding:4px 14px 12px;margin-top:12px}
+.dots{list-style:none} .dots li{position:relative;padding-left:16px;margin:8px 0;font-size:13.5px}
+.dots li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.dots.q li::before{border-radius:1px;transform:rotate(45deg)}
+.ideas{list-style:none} .ideas li{display:flex;gap:10px;align-items:baseline;margin:8px 0;font-size:13.5px}
+.tag{flex-shrink:0;min-width:92px;text-align:center;font-size:10.5px;font-weight:700;text-transform:uppercase;color:var(--k);
+  background:color-mix(in srgb,var(--k) 14%,transparent);border:1px solid color-mix(in srgb,var(--k) 35%,transparent);border-radius:99px;padding:2px 8px}
+.legend{display:flex;gap:8px;margin-bottom:10px}
+.cine{font-size:12px;font-weight:800;color:#fff;background:var(--c);border-radius:6px;padding:2px 8px}
+.fine{font-size:11.5px;color:var(--dim);margin-top:14px}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:16px}
+.day{display:block;text-decoration:none;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.day:first-child{border-color:var(--accent)} .day .d{font-weight:700;text-transform:capitalize} .day .f{font-size:13px;color:var(--muted);margin-top:4px}
+.news{padding:10px 0;border-top:1px solid var(--line)} .news:first-of-type{border-top:none;padding-top:0}
+.news h4{font-size:15px;margin-bottom:4px} .news p{font-size:14px;color:var(--muted);margin-bottom:6px}
+.fuentes{display:flex;flex-wrap:wrap;gap:4px 10px} .poder{margin-bottom:14px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;display:block;overflow-x:auto}
+.tbl th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);padding:6px 8px;border-bottom:1px solid var(--line)}
+.tbl td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top} .horas{white-space:nowrap;color:var(--muted)}
+.impact{font-size:14px;margin:10px 0 6px} .frase{font-size:15px;margin-top:10px;color:var(--accent)}
+footer{color:var(--dim);font-size:12px;text-align:center;margin-top:32px}
+@media(max-width:640px){.cols{grid-template-columns:1fr} h1{font-size:22px}}
+</style></head><body><header class="top"><h1>📚 Gran Dossier</h1><div class="sub">Medicina · Actualidad · Ocio — un día por página</div></header>
+<main class="wrap"><div class="days"><a class="day" href="dias/2026-10-29.html"><div class="d">jueves 29 de octubre de 2026</div>
+      <div class="f">Fiesta de Santos Simón y Judas</div></a></div><footer>Gran Dossier</footer></main></body></html>
